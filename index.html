@@ -232,6 +232,14 @@ toggle.addEventListener('click', () => {
   toggle.classList.toggle('active');
   mobileMenu.classList.toggle('active');
 });
+
+// Close mobile menu when clicking any link inside it
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    toggle.classList.remove('active');
+  });
+});
 </script>
 </body>
 </html>
