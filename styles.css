@@ -224,7 +224,7 @@ a:hover {
   flex-direction: column;
   gap: 30px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .mobile-menu a {
@@ -719,4 +719,10 @@ footer {
     width: 100%;
     max-width: 320px;
   }
+}
+
+#shows,
+#merch,
+#about {
+  scroll-margin-top: 90px;
 }
